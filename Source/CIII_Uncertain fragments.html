@@ -1,0 +1,852 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=815' accesskey='1'>Schøyen Collection: Brāhmī, published</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>Schøyen Collection: Brāhmī, published<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_815[4434]" value="4434" id="lancheckbox" checked >Sanskrit: </label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="815">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="815">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='815'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v815">Search in Schøyen Collection: Brāhmī, published</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=815'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=815'>Schøyen Collection: Brāhmī, published</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=815" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="71459.Vinaya,alphabetically|71467.Sūtra,alphabetically|71495.Abhidharma,alphabetically|71497.Miscellaneous,inorderofpublication|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('71459.Vinaya,alphabetically','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71459.Vinaya,alphabetically" border=0 hspace=2><a id="href_71459.Vinaya,alphabetically" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400694&level=1&cid=621600" class="ajax_tree0">Vinaya, alphabetically
+</td></tr></table>
+<div style="display:none;"  id="div_71459.Vinaya,alphabetically">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('71460.Prātimokṣa-Vibhaṅga')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71460.Prātimokṣa-Vibhaṅga" border=0 hspace=2><a id="href_71460.Prātimokṣa-Vibhaṅga" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400695&level=2&cid=621601" class="ajax_tree1">Prātimokṣa-Vibhaṅga
+</td></tr></table>
+<div style="display:none;"  id="div_71460.Prātimokṣa-Vibhaṅga">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71461.vol.1" border=0 hspace=2><a id="href_71461.vol.1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400696&level=3&cid=621602" class="ajax_tree2">vol. 1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71462.vol.2" border=0 hspace=2><a id="href_71462.vol.2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400697&level=3&cid=621603" class="ajax_tree2">vol. 2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71463.vol.3" border=0 hspace=2><a id="href_71463.vol.3" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400699&level=3&cid=621605" class="ajax_tree2">vol. 3
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('71464.Karmavācanā')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71464.Karmavācanā" border=0 hspace=2><a id="href_71464.Karmavācanā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400701&level=2&cid=621607" class="ajax_tree1">Karmavācanā
+</td></tr></table>
+<div style="display:none;"  id="div_71464.Karmavācanā">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71465.Morefragments" border=0 hspace=2><a id="href_71465.Morefragments" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400705&level=3&cid=621611" class="ajax_tree2">More fragments
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71466.Vinayadhara" border=0 hspace=2><a id="href_71466.Vinayadhara" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400709&level=2&cid=621615" class="ajax_tree1">Vinayadhara
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('71467.Sūtra,alphabetically','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71467.Sūtra,alphabetically" border=0 hspace=2><a id="href_71467.Sūtra,alphabetically" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400710&level=1&cid=621616" class="ajax_tree0">Sūtra, alphabetically
+</td></tr></table>
+<div style="display:none;"  id="div_71467.Sūtra,alphabetically">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('71468.Āgama')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71468.Āgama" border=0 hspace=2><a id="href_71468.Āgama" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400711&level=2&cid=621617" class="ajax_tree1">Āgama
+</td></tr></table>
+<div style="display:none;"  id="div_71468.Āgama">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71469.*AndhasūtraandKavikumārāvādana" border=0 hspace=2><a id="href_71469.*AndhasūtraandKavikumārāvādana" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400712&level=3&cid=621618" class="ajax_tree2">*Andhasūtra and Kavikumārāvādana
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('71470.Caṅgīsūtra')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71470.Caṅgīsūtra" border=0 hspace=2><a id="href_71470.Caṅgīsūtra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400714&level=3&cid=621620" class="ajax_tree2">Caṅgīsūtra
+</td></tr></table>
+<div style="display:none;"  id="div_71470.Caṅgīsūtra">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71471.Uncertainfragments" border=0 hspace=2><a id="href_71471.Uncertainfragments" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400720&level=4&cid=621626" class="ajax_tree3">Uncertain fragments
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71472.Mahāparinirvāṇasūtra" border=0 hspace=2><a id="href_71472.Mahāparinirvāṇasūtra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400722&level=3&cid=621628" class="ajax_tree2">Mahāparinirvāṇasūtra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71473.Maitreyavyākaraṇa" border=0 hspace=2><a id="href_71473.Maitreyavyākaraṇa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400727&level=3&cid=621633" class="ajax_tree2">Maitreyavyākaraṇa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71474.ŚikhālakasūtraSiṅgālovādasutta" border=0 hspace=2><a id="href_71474.ŚikhālakasūtraSiṅgālovādasutta" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400728&level=3&cid=621634" class="ajax_tree2">Śikhālakasūtra Siṅgālovādasutta
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('71475.Mahāyāna,alphabetically')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71475.Mahāyāna,alphabetically" border=0 hspace=2><a id="href_71475.Mahāyāna,alphabetically" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400729&level=2&cid=621635" class="ajax_tree1">Mahāyāna, alphabetically
+</td></tr></table>
+<div style="display:none;"  id="div_71475.Mahāyāna,alphabetically">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('71476.AṣṭasāhasrikāPrajñāpāramitā')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71476.AṣṭasāhasrikāPrajñāpāramitā" border=0 hspace=2><a id="href_71476.AṣṭasāhasrikāPrajñāpāramitā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400730&level=3&cid=621636" class="ajax_tree2">Aṣṭasāhasrikā Prajñāpāramitā
+</td></tr></table>
+<div style="display:none;"  id="div_71476.AṣṭasāhasrikāPrajñāpāramitā">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('71477.Appendix')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71477.Appendix" border=0 hspace=2><a id="href_71477.Appendix" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400748&level=4&cid=621654" class="ajax_tree3">Appendix
+</td></tr></table>
+<div style="display:none;"  id="div_71477.Appendix">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71478.a.Identifiedfragments" border=0 hspace=2><a id="href_71478.a.Identifiedfragments" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400749&level=5&cid=621655" class="ajax_tree4">a. Identified fragments
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71479.b.Unidentifiedfragments" border=0 hspace=2><a id="href_71479.b.Unidentifiedfragments" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400758&level=5&cid=621664" class="ajax_tree4">b. Unidentified fragments
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71480.c.Unplacedfragments" border=0 hspace=2><a id="href_71480.c.Unplacedfragments" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400764&level=5&cid=621670" class="ajax_tree4">c. Unplaced fragments
+</td></tr></table>
+</div>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71481.Bspṭ:Bodhisatvapiṭakasūtra" border=0 hspace=2><a id="href_71481.Bspṭ:Bodhisatvapiṭakasūtra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400781&level=3&cid=621687" class="ajax_tree2">Bspṭ: Bodhisatvapiṭakasūtra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71482.Candr:Candrottarādārikāvyākaraṇa" border=0 hspace=2><a id="href_71482.Candr:Candrottarādārikāvyākaraṇa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400793&level=3&cid=621699" class="ajax_tree2">Candr: Candrottarādārikāvyākaraṇa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71483.Sddhmp:Saddharmapuṇḍarīkasūtra" border=0 hspace=2><a id="href_71483.Sddhmp:Saddharmapuṇḍarīkasūtra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400794&level=3&cid=621700" class="ajax_tree2">Sddhmp: Saddharmapuṇḍarīkasūtra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71484.Samādhirājasūtra" border=0 hspace=2><a id="href_71484.Samādhirājasūtra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400821&level=3&cid=621727" class="ajax_tree2">Samādhirājasūtra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71485.LargerSukhāvatīvyūhasūtra" border=0 hspace=2><a id="href_71485.LargerSukhāvatīvyūhasūtra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400837&level=3&cid=621743" class="ajax_tree2">Larger Sukhāvatīvyūhasūtra
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71486.VajracchedikāPrajñāpāramitā" border=0 hspace=2><a id="href_71486.VajracchedikāPrajñāpāramitā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400840&level=3&cid=621746" class="ajax_tree2">Vajracchedikā Prajñāpāramitā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('71487.Mahāyānasūtramanuscript')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71487.Mahāyānasūtramanuscript" border=0 hspace=2><a id="href_71487.Mahāyānasūtramanuscript" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400861&level=3&cid=621767" class="ajax_tree2">Mahāyāna sūtra manuscript
+</td></tr></table>
+<div style="display:none;"  id="div_71487.Mahāyānasūtramanuscript">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('71488.Śrīmālā')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71488.Śrīmālā" border=0 hspace=2><a id="href_71488.Śrīmālā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400862&level=4&cid=621768" class="ajax_tree3">Śrīmālā
+</td></tr></table>
+<div style="display:none;"  id="div_71488.Śrīmālā">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71489.Fragments" border=0 hspace=2><a id="href_71489.Fragments" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400865&level=5&cid=621771" class="ajax_tree4">Fragments
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('71490.Pravāraṇāsūtra')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71490.Pravāraṇāsūtra" border=0 hspace=2><a id="href_71490.Pravāraṇāsūtra" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400867&level=4&cid=621773" class="ajax_tree3">Pravāraṇāsūtra
+</td></tr></table>
+<div style="display:none;"  id="div_71490.Pravāraṇāsūtra">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71491.Smallfragments" border=0 hspace=2><a id="href_71491.Smallfragments" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400868&level=5&cid=621774" class="ajax_tree4">Small fragments
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71492.Sdhan:Sarvadharmāpravṛttinirdeśa" border=0 hspace=2><a id="href_71492.Sdhan:Sarvadharmāpravṛttinirdeśa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400870&level=4&cid=621776" class="ajax_tree3">Sdhan: Sarvadharmāpravṛttinirdeśa
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71493.Ajātaśatru" border=0 hspace=2><a id="href_71493.Ajātaśatru" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400883&level=4&cid=621789" class="ajax_tree3">Ajātaśatru
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71494.Unidentified" border=0 hspace=2><a id="href_71494.Unidentified" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400897&level=4&cid=621803" class="ajax_tree3">Unidentified
+</td></tr></table>
+</div>
+</div>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('71495.Abhidharma,alphabetically','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71495.Abhidharma,alphabetically" border=0 hspace=2><a id="href_71495.Abhidharma,alphabetically" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400900&level=1&cid=621806" class="ajax_tree0">Abhidharma, alphabetically
+</td></tr></table>
+<div style="display:none;"  id="div_71495.Abhidharma,alphabetically">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71496.Śāriputra-Abhidharma" border=0 hspace=2><a id="href_71496.Śāriputra-Abhidharma" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400901&level=2&cid=621807" class="ajax_tree1">Śāriputra-Abhidharma
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<a href="javascript:;" onclick="Expand('71497.Miscellaneous,inorderofpublication','0','1')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71497.Miscellaneous,inorderofpublication" border=0 hspace=2><a id="href_71497.Miscellaneous,inorderofpublication" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400908&level=1&cid=621814" class="ajax_tree0">Miscellaneous, in order of publication
+</td></tr></table>
+<div style="display:none;"  id="div_71497.Miscellaneous,inorderofpublication">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('71498.Aśokalegend')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71498.Aśokalegend" border=0 hspace=2><a id="href_71498.Aśokalegend" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400909&level=2&cid=621815" class="ajax_tree1">Aśoka legend
+</td></tr></table>
+<div style="display:none;"  id="div_71498.Aśokalegend">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71499.Pāṃśupradānāvadāna" border=0 hspace=2><a id="href_71499.Pāṃśupradānāvadāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400910&level=3&cid=621816" class="ajax_tree2">Pāṃśupradānāvadāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71500.Vītaśokāvadāna" border=0 hspace=2><a id="href_71500.Vītaśokāvadāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400912&level=3&cid=621818" class="ajax_tree2">Vītaśokāvadāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71501.Kūṇālāvadāna" border=0 hspace=2><a id="href_71501.Kūṇālāvadāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400915&level=3&cid=621821" class="ajax_tree2">Kūṇālāvadāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71502.Aśokāvadāna" border=0 hspace=2><a id="href_71502.Aśokāvadāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400918&level=3&cid=621824" class="ajax_tree2">Aśokāvadāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71503."TheCausesofaNorthernIndian"and"TheCausesofDevarakṣita"" border=0 hspace=2><a id="href_71503."TheCausesofaNorthernIndian"and"TheCausesofDevarakṣita"" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400919&level=3&cid=621825" class="ajax_tree2">"The Causes of a Northern Indian" and "The Causes of Devarakṣita"
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71504."TheCausesoftheRiver"" border=0 hspace=2><a id="href_71504."TheCausesoftheRiver"" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400920&level=3&cid=621826" class="ajax_tree2">"The Causes of the River"
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71505.Aśokāvadāna,notyetidentified" border=0 hspace=2><a id="href_71505.Aśokāvadāna,notyetidentified" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400921&level=3&cid=621827" class="ajax_tree2">Aśokāvadāna, not yet identified
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71506.Aśokamukhanāgavinayapariccheda" border=0 hspace=2><a id="href_71506.Aśokamukhanāgavinayapariccheda" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400927&level=3&cid=621833" class="ajax_tree2">Aśokamukhanāgavinayapariccheda
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71507.Earlycommentary" border=0 hspace=2><a id="href_71507.Earlycommentary" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400928&level=2&cid=621834" class="ajax_tree1">Early commentary
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71508.Huviṣka" border=0 hspace=2><a id="href_71508.Huviṣka" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400933&level=2&cid=621839" class="ajax_tree1">Huviṣka
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71509.Mīmāṃsaka" border=0 hspace=2><a id="href_71509.Mīmāṃsaka" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400935&level=2&cid=621841" class="ajax_tree1">Mīmāṃsaka
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71510.Jyotiṣkāvadāna" border=0 hspace=2><a id="href_71510.Jyotiṣkāvadāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400936&level=2&cid=621842" class="ajax_tree1">Jyotiṣkāvadāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('71511.Poetical')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71511.Poetical" border=0 hspace=2><a id="href_71511.Poetical" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400939&level=2&cid=621845" class="ajax_tree1">Poetical
+</td></tr></table>
+<div style="display:none;"  id="div_71511.Poetical">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('71512.Mātṛceṭa')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71512.Mātṛceṭa" border=0 hspace=2><a id="href_71512.Mātṛceṭa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400940&level=3&cid=621846" class="ajax_tree2">Mātṛceṭa
+</td></tr></table>
+<div style="display:none;"  id="div_71512.Mātṛceṭa">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71513.Prasādapratibhodbhava" border=0 hspace=2><a id="href_71513.Prasādapratibhodbhava" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400941&level=4&cid=621847" class="ajax_tree3">Prasādapratibhodbhava
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71514.Varṇāhvarṇa" border=0 hspace=2><a id="href_71514.Varṇāhvarṇa" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400943&level=4&cid=621849" class="ajax_tree3">Varṇāhvarṇa
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <a href="javascript:;" onclick="Expand('71515.Āryasūra’sJātakamālā')"><img src="./application/class/images/collapsed.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="img_71515.Āryasūra’sJātakamālā" border=0 hspace=2><a id="href_71515.Āryasūra’sJātakamālā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400951&level=3&cid=621857" class="ajax_tree2">Āryasūra’s Jātakamālā
+</td></tr></table>
+<div style="display:none;"  id="div_71515.Āryasūra’sJātakamālā">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71516.Śreṣṭhi-andAviṣahyaśreṣṭhijātaka" border=0 hspace=2><a id="href_71516.Śreṣṭhi-andAviṣahyaśreṣṭhijātaka" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400952&level=4&cid=621858" class="ajax_tree3">Śreṣṭhi- and Aviṣahyaśreṣṭhijātaka
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71517.MaṅgalaversesandVyāghrījātaka" border=0 hspace=2><a id="href_71517.MaṅgalaversesandVyāghrījātaka" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400953&level=4&cid=621859" class="ajax_tree3">Maṅgala verses and Vyāghrījātaka
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71518.Maitrībalajātaka" border=0 hspace=2><a id="href_71518.Maitrībalajātaka" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400954&level=4&cid=621860" class="ajax_tree3">Maitrībalajātaka
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71519.Śarabhajātaka" border=0 hspace=2><a id="href_71519.Śarabhajātaka" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400956&level=4&cid=621862" class="ajax_tree3">Śarabhajātaka
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71520.Aviṣahyaśreṣṭhijātaka" border=0 hspace=2><a id="href_71520.Aviṣahyaśreṣṭhijātaka" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400957&level=4&cid=621863" class="ajax_tree3">Aviṣahyaśreṣṭhijātaka
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71521.Śibijātaka" border=0 hspace=2><a id="href_71521.Śibijātaka" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400958&level=4&cid=621864" class="ajax_tree3">Śibijātaka
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71522.Viśvaṃtarāvadāna" border=0 hspace=2><a id="href_71522.Viśvaṃtarāvadāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400959&level=4&cid=621865" class="ajax_tree3">Viśvaṃtarāvadāna
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71523.Haribhaṭṭa’sJātakamālā" border=0 hspace=2><a id="href_71523.Haribhaṭṭa’sJātakamālā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400961&level=3&cid=621867" class="ajax_tree2">Haribhaṭṭa’s Jātakamālā
+</td></tr></table>
+</div>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71524.yedharmā" border=0 hspace=2><a id="href_71524.yedharmā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400963&level=2&cid=621869" class="ajax_tree1">ye dharmā
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71525.Mahāsamājasūtracommentary?" border=0 hspace=2><a id="href_71525.Mahāsamājasūtracommentary?" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400964&level=2&cid=621870" class="ajax_tree1">Mahāsamājasūtra commentary ?
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71526.Avadānaśataka" border=0 hspace=2><a id="href_71526.Avadānaśataka" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400965&level=2&cid=621871" class="ajax_tree1">Avadānaśataka
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71527.Fragmentofaplay" border=0 hspace=2><a id="href_71527.Fragmentofaplay" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400975&level=2&cid=621881" class="ajax_tree1">Fragment of a play
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+ &nbsp;  &nbsp; <img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_71528.CopperScroll" border=0 hspace=2><a id="href_71528.CopperScroll" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=815&mid=1400976&level=2&cid=621882" class="ajax_tree1">Copper Scroll
+</td></tr></table>
+</div>
+<script language=javascript>test('71471.Uncertainfragments|71470.Caṅgīsūtra|71468.Āgama|71467.Sūtra,alphabetically|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=815&amp;mid=1400720&amp;level=4">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=815&amp;cid=621626&amp;mid=1400720&amp;level=4">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=815&amp;cid=621626&amp;mid=1400720&amp;level=4">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:50%;'>						<script language="javascript" type="text/javascript">
+
+							tekstid = "";
+							kilderef = "  ";
+							$('#'+tekstid).text(kilderef);
+						</script>
+					<div class='kilderef' id='5972621'></div><div class='clear'></div><div class='Sanskrit'><span id='5972621bi' class='paragraph'>
+								Uncertain fragments (vol. 1)<br />2376/1/6b<br />A<br />/// yabhītaḥ ///&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972621";
+					filsti = "public/media/img_to_txt/1473946548.jpg";
+					thumbnail = "public/media/img_to_txt/th_1473946548.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='6503127bi' class='generelltekst'>
+								2376/1/4b<br />A<br />1 /// ..k[ā]śaṃ ///<br />2 /// [u]ddhutako ///<br />3 /// sarggapari ///<br />4 /// [hi]sa[pta]hi ///<br /><br />B<br />1 /// rasya || pe || ///<br />2 /// tipi niṣī ///<br />3 /// [u]pani[śr] ///<br />4 /// kāy. ///&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "6503127";
+					filsti = "public/media/img_to_txt/1481281644.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481281644.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972622bi' class='paragraph'>
+								2376/1/9<br />A (recto)<br />1 /// avadvar ...///<br />2 /// vataḥ bharadvā[ja]sya id. ///<br />3 /// ṇaṃ gautamaṃ [mapārt] ///<br /><br />B (verso)<br />1 /// gamaḥ tadāvasārīta ///<br />2 /// [kara]vo mā[ṇavaḥ] ///&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972622";
+					filsti = "public/media/img_to_txt/1473946699.jpg";
+					thumbnail = "public/media/img_to_txt/th_1473946699.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'>						<script language="javascript" type="text/javascript">
+
+							tekstid = "5972621";
+							kilderef = "BMSC  ";
+							$('#'+tekstid).text(kilderef);
+						</script>
+					<div class='kilderef' id='5972623'></div><div class='clear'></div><div class='Sanskrit'><span id='5972623bi' class='paragraph'>
+								Mahāparinirvāṇasūtra<br />BSMC II 17–24<br /><br />2379/uf4/5c<br />recto<br />a /// + + + + [k]. + ///<br />b /// nāsanaglāna[p]. ///<br />c /// [tr]or vai .e .ī + + ///<br /><br />verso<br />a /// [ṣ]m. + + + + +///<br />b /// hāṇīy[ā]n dh. [m]. .. ///<br />c /// + .i .. [ṇ]āṃ p[r]. .[i] ///&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972623";
+					filsti = "public/media/img_to_txt/1473947378.jpg";
+					thumbnail = "public/media/img_to_txt/th_1473947378.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972624bi' class='paragraph'>
+								2380/2, 2380/12<br />recto<br />1 /// .. bhavaṃ bhavasaṃskāram avāsṛjan muniḥ a .[y]. .[m]. + + + + + + + + nat kośam ivāṇḍa[sa].<br />2 /// .. [ṃ]ta upasaṃkkramya bhagavataḥ pādau śirasā vanditvā [e] + + + + + + [t]. [s]th[ita] āyuṣmān [ā]nand[o]<br />3 /// + + [ś]odāhā aṃtarikṣe devadundubhayo bhinadaṃti + + .. [me] ānanda hetavo ṣṭau pratyayā<br /><br />verso<br />1 /// + + .. [r] ākāśe saṃniśritaḥ bhavati sa samayo [y]. + + + [vi]ṣamā vāyavo vāṃti ākāśe <br />2 /// + thamaḥ pratyayo mahataḥ pṛthivīcālasya · puna + + + + + + [ha]rdhiko bhavati mahānubha<br />3 /// [bhi]kṣuṇī devatā mahardhikā bhavati mahā .. .ā .ā .. + + + + + + + + ..ṇā pṛthivīṃ calayati ·&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972624";
+					filsti = "public/media/img_to_txt/1473947408.jpg";
+					thumbnail = "public/media/img_to_txt/th_1473947408.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972625bi' class='paragraph'>
+								2380/54b<br />recto<br />1 /// + .. śīlakathāṃ svargakathāṃ puṇyakathā. + ///<br />2 /// + .. n. [ro]dhagāminī pratipad āryasat[y]aṃ .. ///<br />3 /// .. n a ◯ bhikkrāṃtaṃ sugata : ta[d]yathāpi .. ///<br />4 /// ⟪kuśina .. ..⟫ pāvā{{ṃ}}pannaṃ sarvasatvaprāṇabhūteṣu .i ///<br /><br />verso<br />1 /// .o pi maha[l]laputro m-anubandhit[e]na khalu puna sa ///<br />2 /// .. .. [m]ya ◯ ⟪yena⟫ k[ṛṣ]igrāmakas tenopasaṃ[k]kr . .i ///<br />3 /// .. nāṃ ca manuṣyāṇāṃ dīrgharātraṃ [s]y[ā]⟪d a⟫ rth. .. ///<br />4 /// + .. [ḥ] atha [kha]lu putkaso mallaputra ///&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972625";
+					filsti = "public/media/img_to_txt/1473947425.jpg";
+					thumbnail = "public/media/img_to_txt/th_1473947425.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972626bi' class='paragraph'>
+								2382/uf37/3d<br />recto<br />a /// + + + .. .. + + + + ///<br />b /// .. [t]ukāmaḥ pūrvā[h]ṇ [kā] .. .. ///<br />c /// + hāsudarśano .i .o .. + + + ///<br />d /// .. nda rājā mahā + + + + + + ///<br /><br />verso<br />a /// [s]. svā[mikā s]. + + + + ///<br />b /// + prat[yu]pasthā[p]. [y]. + + ///<br />c /// .. mitvā rājānaṃ mahās[u] ///<br />d /// + + + .. .. .. + + + ///&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972626";
+					filsti = "public/media/img_to_txt/1473947449.jpg";
+					thumbnail = "public/media/img_to_txt/th_1473947449.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972627bi' class='paragraph'>
+								2382/67<br />recto<br />a /// + nda rājā m. [h]. suda .ś. .. ///<br />b /// [sa]mādhijaṃ prītisu[kh].ṃ .. ///<br />c /// pekṣakaś ca vi .. + + + ///<br />d /// [y]at kūṭāgārā[n].[i] + + + ///<br />e /// + .[u]ddhaṃ .. + .. + + + ///<br />f /// + .. .. + + + + + + ///<br /><br />verso<br />a /// + mā .. + + + + + + ///<br />b /// + dh[ā]rme prā[s]. + + + ///<br />c /// [bh]. vac ciradṛṣṭo + + + ///<br />d /// rājānaṃ kalpa[y]. + + ///<br />e /// [tna]ḥ subhadrāyā dev[y]āḥ pr. ///&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972627";
+					filsti = "public/media/img_to_txt/1473947468.jpg";
+					thumbnail = "public/media/img_to_txt/th_1473947468.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'>						<script language="javascript" type="text/javascript">
+
+							tekstid = "5972623";
+							kilderef = "BMSC  ";
+							$('#'+tekstid).text(kilderef);
+						</script>
+					<div class='kilderef' id='5972628'></div><div class='clear'></div><div class='Sanskrit'><span id='5972628bi' class='paragraph'>
+								Maitreyavyākaraṇa<br />BSMC III 7–10<br /><br />2382/286 (one side only)<br />1 māṇavānāṃ sa maitreyo maṃtrān adhyāpayiṣyati + + + + + ///<br />2 vibhūṣitaṃ · pradāsyati dvijātibhyo ya[jña]ṃ [k]ṛ .v. [p]u[r]. .s. ra || t. ///<br />3 ṣṭvevan tām anityatām* kṛtsnaṃ vicintya saṃsāraṃ pravrajyāṃ [ro]cayiṣya ///<br />4 + + + + + hasrai saṃpuraskṛtaḥ niṣkramiṣya ◯ ti maitre ///<br />5 + + + + + + + + + + .[ai] .e[y]. [p]. [ruṣ]o .. .. .. .. .. .. ///&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972628";
+					filsti = "public/media/img_to_txt/1476213468.jpg";
+					thumbnail = "public/media/img_to_txt/th_1476213468.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'>						<script language="javascript" type="text/javascript">
+
+							tekstid = "5972628";
+							kilderef = "BMSC  ";
+							$('#'+tekstid).text(kilderef);
+						</script>
+					<div class='kilderef' id='5972629'></div><div class='clear'></div><div class='Sanskrit'><span id='5972629bi' class='paragraph'>
+								A version of the Śikhālakasūtra/Siṅgālovādasutta<br />BSMC III 1–6<br /><br />2379/45, 2376/36<br />recto<br />1 /// hapatiputrā ādīnavā sur[ā]m. r. yamadyapānapramādasthānānuyog[o] v[e]dayitavyaṃ katame ṣaṭ* .. + + .. ..<br />2 /// dorbalyīkaraṇaṃ ime grahapatiputrā ṣaṭ* ādīnavaṃ ‖ ṣa kho pun ime gṛhapatiputrā ādīnavā vikāl[aveśi]<br />3 /// aguptaṃ arakṣitaṃ svāpateyaṃ se bhoti a[gu]ptaṃ arakṣitaṃ śaṃki atmānaṃ karoti abhūtā se vacanapathā rohaṃti<br />4 /// [‖] ṣa kho pun ime gṛhapatiputrā ādīnavā [pā]pamitrajanasaṃsevāye vedayitavyaṃ katame ṣaṭ* asaṃto na<br />5 /// dgachati sahadgatasya vā pariṣagatasya vā jñātikulamadhyagataṃsya vā rājakulamadhyagatasya vā vacanā⟪[ni]⟫ [kkra]<br />6 /// .. hapatiputrā [ā]dīnavā mahāsamā[j].<br /><br />verso<br />1 /// + gītaṃ kahi vādi[t]aṃ kahi kumbhaṃtuṇā kahi pāṇisvarā kahi śobhikānagarāṇi tasya evaṃ ratikṛ[ḍ]yānuyoga<br />2 /// .. kho pun ime gṛhapatiputrā ādīnavā ālasyakosidye vedayitavyaṃ katame ṣaṭ* iha gṛhapa <br />3 /// [t]i atiuṣṇaṃ ti {{.. .. ..}} karmaṃ na karoti bubhūkṣito smīti karmaṃ na karoti atyāśito ti karmaṃ na karoti tasye<br />4 /// + pratyavekṣitā kṣipram evaṃ bhogā kṣayavya[ya]ṃtaṃ gachati ime gṛhapatiputrā ṣa ādīnavā alasyakosi<br />5 /// .[i]vā ca svapnaṃ paricāryaṃ kāle pāpāni mitrāṇi kadaryatā caṃ ete pi sthānā puruṣa dhvasaṃyaṃti + + +&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972629";
+					filsti = "public/media/img_to_txt/1476213567.jpg";
+					thumbnail = "public/media/img_to_txt/th_1476213567.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'>						<script language="javascript" type="text/javascript">
+
+							tekstid = "5972629";
+							kilderef = "BMSC  ";
+							$('#'+tekstid).text(kilderef);
+						</script>
+					<div class='kilderef' id='5972630'></div><div class='clear'></div><div class='Sanskrit'><span id='5972630bi' class='paragraph'>
+								Mahāyāna, alphabetically&nbsp;</span></div></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'>						<script language="javascript" type="text/javascript">
+
+							tekstid = "5972630";
+							kilderef = "BMSC  ";
+							$('#'+tekstid).text(kilderef);
+						</script>
+					<div class='kilderef' id='5972631'></div><div class='clear'></div><div class='Sanskrit'><span id='5972631bi' class='paragraph'>
+								Aṣṭasāhasrikā Prajñāpāramitā<br />BMSC I 1–51; BMSC II 37–44<br />2374/35/6<br />recto<br />4 ... [y](ā)vusa śār[i]pu(tra) ...<br />5 ... ◊ subhūti [pa](r)i ...<br /><br />verso<br />1 ... [a]bhibhūto abhū(t)[i](ti) ...<br />2 ... p[āra]mitāye ◊ [s]. ...&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972631";
+					filsti = "public/media/img_to_txt/1481281879.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481281879.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972632bi' class='paragraph'>
+								2374/3/30<br />recto<br />a ... jñā sa(ṃ)sk[ā]rā vijñāna(ṃ) n[i](t)y(ṃ) ...<br />b ... anātmā ti na thātavyaṃ ◊ ...<br />c ... ..vā upalabhati [v]ā (it)[i] ...<br /><br />verso<br />a ... ..tphala(ṃ) asa(ṃ)skṛtapra ...<br />b ... [ta]vyaṃ ◊ pratyekabuddhatvaṃ [a] ...<br />c ... nirvas(y)aīti na s[th]ā ...&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972632";
+					filsti = "public/media/img_to_txt/1481281896.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481281896.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972633bi' class='paragraph'>
+								2374/3/2<br />recto<br />1 ... + + + + + + + + (saṃj)ñ(i)⟨no⟩ v[ī]rya(ṃ) samādāya<br />2 ... + (anut)[t](a)[r](ā)y(aṃ) samyasaṃbodhīye saṃprasti<br />3 ... [d](ī)vālikāsāmaṃ kalpāṃ tiṣṭatā ◊ upalaṃbha<br />4 ... prajñāṃ vimuktiṃ vimuktijñā[nada]rśa[na]ṃ<br />5 ... (jñ)ā(ṃ v)i(mukt)i + + + + + + + +<br /><br />verso<br />1 ... + + + + .. .. + + + + + +<br />2 . . . purimako upalambhikānāṃ bodh(i)s(ā)tv(ā)n(āṃ)<br />3 ... upeti saṃkhyāṃ kalāṃ pi gaṇanāṃ pi<br />4 ... + [margin] atha kho yiṣmā śāriputro<br />5 ... + + + + + + + (m)i (bha)gavaṃ prajñāpārami&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972633";
+					filsti = "public/media/img_to_txt/1481281932.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481281932.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972634bi' class='paragraph'>
+								2374/1/21, 2374/1/4, 2375/42, 2374/1/12, 2376/147, 2374/1/3, 2374/1/33; fol. 152<br />recto<br />1 v[i]ṣṭ[o] vā bhav. [ṣ]y. [t]. ◊ [a]tmutk. [r]ṣak. .. [r]. + + /// + + + + + + + + [k]. [l]. [p]utro kuladhītā vā imā. prajñāpāramitāṃ bhāṣ[i]y. mānā. .. + + + + + + + + + + + + + +<br />2 ti pratikrośiṣyati pratikṣipiṣya[t]. + + /// + + + + + + + + [a]tha kho yuṣmā subhūti bhagavaṃtaṃ etad avoca ◊ duradhimuccā bhagavaṃ pra + + + + + + + + + + + + +<br />3 evam eta s[u] ◯ bhūti evam e + + /// + + + [r]. [t]t. .u[ś]. .ū[l]. na durmedhena anartthikena [a]lpaśrutena hīnavīryena [h]īnādhim. [k].ī[k]e + + + + + + + + + + + +<br />4 pamitropastabdena ◊ aśruśrū[ṣ]e + .. /// [a]nabhiyuktena ◊ āhā [k].va gambhīrā vadayaṃ [bh]. + + .r. [j]ñāpāramitā duradhimuccanatāya āha rūpaṃ subhūti abaddhaṃ a[m]u[k]t..<br />5 + .i + + + + + + + + + + + .. /// + + + + + + + + + + + + + + + + [h]. tu vijñāna asvabhāvatvā subhūti abaddhaṃ amuktaṃ. r[ū]pas[y]a subhūti p[u]rva. to<br /><br />verso<br />1 + .[dh]. + .[u] .[t]. + .k. .[y]. + + .[ū] + t. .v. /// + + + + + + + + + + + .. .y. + + + + + + s[v]abhāvaṃ hi subhūti rūpaṃ pratyutpannaṃ subhūti rūpaṃ ◊ abaddhaṃ amuktaṃ ◊ tat kisya heto<br />2 pūrvaṃtāparaṃtāsva ◯ bhāvaṃ hi s[u]bh . .i [p]. /// [s]. bhūti ◊ pūrva. to abaddho amukto ◊ tat kisya he[to] + .[ū] + + .v. [bh]āvaṃ hi subhūti vij[ñ]ānaṃ ◊ vij[ñ]āyas[y]a s[u]bhūti aparaṃto aba ..o [am]. ..o<br />3 tat k[i]sya heto ◯ apara. tāsva[bh]. + + /// + + + ..ṃ .. ..[ṃ] + [t] k[i]sya heto pūrvāṃtāparaṃtāsvabhāvaṃ hi ◊ subhūti vijñānaṃ ◊ āhā gaṃbhīrā .. + + + + + + + + + + + + + + + <br />4 bha◊gavaṃ pra[jñ]. pāramitā ◊ āh[ā] + + /// + + + + + + + + [m]itā ◊ paramaduradhimuccā subhūti prajñāpāramitā ◊ tat kisya he + + + + + + + + + + + + + + +<br />5 śod[dh]ī pi sā yā phala[v]i + ..ī + + /// + + + + + + + + + + [adva]yaṃ etaṃ ◊ [ad].i[dh]ī[k]āraṃ abhin.aṃ [a]chi[n].aṃ [it]i [h]i + + + + + + + + + + + + + + + +&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972634";
+					filsti = "public/media/img_to_txt/1481281970.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481281970.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+										<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972634";
+					filsti = "public/media/img_to_txt/1481283496.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481283496.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972635bi' class='paragraph'>
+								2374/1/7, 2375/2b, 2374/1/16, 2374/1/22, 2374/1/11, 2374/1/40, 2374/1/5<br />recto<br />1 (saṃprahar)[ṣ](a)yitavyo ca ◊ evaṃ atmānaṃ [ca] na kṣaniṣyati buddhānujñā[t](ā)ya(ṃ) ca samā[dā]panāyaṃ samādapitaṃ bhaviṣya(ti) ... imā cāsya sarv[ā]<br />2 [s]ubhūt[i](ṃ) theraṃ āmantresi ◊ sādhu sādhu subhūti yo tvaṃ bodhisatvān[a](ṃ) mahāsatvānaṃ ima saṃgakoṭīyo buddhyāpesi te ... (sūkṣ)[m](ata)rāṃ saṅgā śruṇohi ◊ [s](ā)dhūkaṃ suṣṭhu ca [man](as)[i] ... <br />3 te sādhu bhagavā ti āyuṣmā subhū(t)i (bha)gavato pratyaṃśrauṣi ... [my]āsaṃbuddhaṃ ◊ akāravato ni[m](ittato) ...<br />3–4 (manasī)karoti ◊ parikal[p]e ... [h](i) subhūti saṃgā i[t]i [h]i ... <br /><br />verso<br />1 (bha)gavaṃtānāṃ ye anāsa[v]. ... (saṃ)gā tat kisya hetu y[ā] h[i] s(ubhūti) ...<br />2 vā anāgatā vā pratyutpannā vā nāp[i] ◯ ś(a)kyaṃ pariṇāmayituṃ (na n)i ... .. [ga]ṃbhīrā bhagavaṃ prakṛti ◊ [ā](ha viv)i ...<br />2–3 (bha)[ga]vaṃ prajñāpāramitā ◊ āha prakṛtiviśuddhatvā subhūti ◊ prakṛtivivittatvā gaṃbh[ī]rā prajñāpāramitā ◊ āhā namaḥkaro(mi bhagavaṃ prajñāpāramitā)[y](ai) ◊ āhā sarvā dharmāpi subhūti prakṛ[ti] ... (tat kisya he) <br />4 (to tathā) h[i] subhūti tathāgatena ◊ arahatā samyasaṃbuddhena ◊ [p]rak(ṛ)tiviśuddhāṃ prajñāpāramitāṃ āgamya ◊ prakṛtivivi(kt). ...(vivi)ktatā ◊ āhā tasmā (tarh)i ...&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972635";
+					filsti = "public/media/img_to_txt/1481282096.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481282096.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972636bi' class='paragraph'>
+								2374/1/31<br />recto<br />2 ... [s]ūc(a)yati grāmo v(ā) ...<br />3 ... [sy](a) bhūyo cauramanasī ...<br />4 ... ti pravart(t)eti dhāreti tath(ā) ...<br /><br />verso<br />2 ... [s]. [j]. [n]. .. dūre vā ta i(to) ...<br />3 ... (tat) k(i)sya hetur ninno hi [m](a) ...<br />4 ... ca puna so niṣṭāṃ ga[c](chat)i ...&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972636";
+					filsti = "public/media/img_to_txt/1481282111.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481282111.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972637bi' class='paragraph'>
+								2374/1/14<br />recto<br />1 ... + + .y. + + + + [n]. .. + ...<br />2 ... (ogṛhṇiṣ)[y](aṃ)ti paryāpuṇiṣaṃt(i) ...<br />3 ... (āyu)[ṣ]ma(ṃ)taṃ śāriputraṃ eta ...<br />4 ... syanti likhiṣyanti ogṛ(hṇiṣyaṃti) ...<br />5 ... ◊ evaṃ vutte āyu(ṣmā)ṃ ...<br /><br />verso<br />1 ... (pra)jñāpāramitāṃ śruṇiṣyaṃti ..<br />2 ... [ā]hā evam eta śārip[u](tra) ...<br />3 ... (o)[gṛ]hṇiṣyanti paryāpu(ṇ)[i](ṣyaṃti) ...<br />4 ... (p)r(a)varttitvā dhāretvā vā[c](ayitvā) ...<br />5 ... + [saṃ](n)i + + + + + + .ā ...&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972637";
+					filsti = "public/media/img_to_txt/1481282126.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481282126.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972638bi' class='paragraph'>
+								2374/1/10, 2374/1/15<br />recto<br />1 ... [śa]samān(i) ◊ eva(ṃ) khu su[bhū]t(i) t(a)[th]ā(ga)[t](o) + + + ...<br />2 ... thābhūtaqi prajānā[t]. ... ... (j)[ñ](ā)parāmitām āgamya a[p]rameyāṇaṃ [s]. + + ...<br />3 ... [i]māṃ prajñāparā[mi] ... ... cittāni avimuktāni cittānāti yatha + ...<br />4 ... [gat]o imāṃ pra ... ... muktāni cittāni avimuktā[n]i cittānīti yath(ā) <br />5 ... .. [p](ra)[j]ā[n]āti ◊ [ka]thaṃ (ca) s[u]bhūti tathāgato i ...<br /><br />verso<br />1 ... (p)[r](a)[t]yu[t]p(a)[n]n(aṃ) [a]s(aṃ)tatvāc c[i]ttasya eva(ṃ) khu subhūti [t] ....<br />2 ... .. [v](i)[m]u[kt](ā)[n](i) .. ... ... tathāgato imaṃ prajñāparāmitām āgamya apra(m)[e] + ...<br />3 ... [jñā]parāmitām āga(m)[y](a) ... ... [ti] yathābhūtaṃ prajānāti asaṃtatvā subhūti ++ ...<br />4 ... prajñācakṣ(u)s[y]a ◊ [a] ... ... [pra]jñāparāmitām āgamya aprameyā + + + + ...<br />5 ... [m]i[tā] + + + + ... ... rśayitārī ◊ p[u]na-d-a[par]aṃ s[ubhūt]i .. + + + + ...&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972638";
+					filsti = "public/media/img_to_txt/1481282236.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481282236.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972639bi' class='paragraph'>
+								2375/uf2/6, 2374/1/29, 2374/1/27<br />recto<br />1 ... aprame[y](ā)[n](aṃ) parasatvānaṃ parapudga[l](ā)[n](aṃ) [u](ṃ)m(i)ny(i)t(a)n(i)minyitān[i] yathābhūta(ṃ) pra[j](ā)n(ā) ...<br />2 ... [ya]thābhū(ta)ṃ prajānāti ◊ sarvvāni tāni rūpaniśritāni ◊ utpadyamānāni utpadyaṃīti prajānā[t]i ...<br />3 ... gatena tāni ummiṃjitanimiṃjiātani ◊ kathaṃ jñātāni bhavaṃti ◊ bhoti tathāga[t]o [par]aṃ m(a)[raṇa]ṃ + + ...<br />4 ... + ta ◊ naiva bha[vat]i na na [bhava]ti tathāgato paraṃ ma[r]aṇaṃ ti ◊ rūpaga[t]. + + + + + + + ...<br />5 ... + + + + + + + + + + + + + + + + [tam] e[ta ◊ n]ai[va] + + + + + + + + ...<br /><br />verso<br />1 ... + + + + + + + + + + + + + + + + [p](a)[g](a)[t](aṃ) e[t](a) ◊ [ś]. + + ...<br />2 ... + [t](a)m eta ev(aṃ) v(e)[d](a)n(ā) s(aṃ)[j]ñ[ā] [s](aṃ)sk(ā)rā ◊ śāśv(a)to ātmā ca loko ca idam e[va] .. + + + + + + ...<br />3 ... satyaṃ mogham anyaṃ ti ◊ vijñānagatatam eta ◊ naiva śāśvato atmā ca loko [c](a) [i]dam eva sa(t)y(aṃ) ...<br />4 ... [da]m eva (sa)tyaṃ m[o]gham anyaṃ ti rūpagatam eta ◊ aṃtavānāṃtavāṃ atmā ca loko ca ida ...<br />5 ... [e]vaṃ ve[da](nā) [s]arṃjñā sarṃskārā ◊ aṃtavāṃ [āt](m)ā [ca i]dam eva satyaṃ mo[gha]m an(y)aṃ ti vijñā[nagata] ...&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972639";
+					filsti = "public/media/img_to_txt/1481282268.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481282268.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972640bi' class='paragraph'>
+								2374/1/9<br />recto<br />1 ayaṃ prajñāpāramitā vyocāritā bhavati + ...<br />2 ninnāyaṃ subhūti saṃtatīyaṃ ākāśapr[o] ...<br />3 [ap](ra)[māṇā ◯ h]i [s](u)[bh](ū)[t]i [sa]r[v](va)[j](ñ)[ā] + ...<br /><br />verso<br />3 + + .r. + + + + .(v)v. + + + + + + ...<br />4 nam indro sardhdhaṃ kāmāvacarehi deve ...<br />5 tathāgatasyarhato saṃmyasaṃbuddha[s](ya) ...&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972640";
+					filsti = "public/media/img_to_txt/1481282283.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481282283.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972641bi' class='paragraph'>
+								2374/1/8, 2376/23, 2374/1/30<br />recto<br />1 /// + + + [sa]kāṃ ca devāṃ etad avoca eva + + + + + + + + + + /// + + + + + .. .. .. ///<br />2 /// + + + [t]tarāṃ samyāsaṃbodhiṃ abhisaṃ + + + + + + + .u[k]. + + + + .t. + /// + .. yaṃ dharmo abhisaṃ .. ///<br />3 /// + + [d]. vaputrā gaṃ[bhī]ratā dharmasya ◊ ā[k]. + + + + .. y[aṃ] gaṃbhīro [yaṃ dh]. /// [r]. yan dharmo sarvadharma [ā] ///<br />4 /// + .utte śakkro de[vā]nam indro kāmāvaca[r]. + + [v]ā brahmā ca sahaṃ + + /// taṃ etad avocā a[śca] ///<br />5 /// .. naṃ ayaṃ dharmo deśīyati ug.ahe [ca] + ka carati ❀ deva + + /// + + + + + + + + ///<br /><br />verso<br />1 /// yan dha.m[o] ◊ kahañ c[a] prat.hanyata ◊ a[p]. + + [ha]talakṣaṇo vadayaṃ + + /// + + + + + + + + ///<br />2 /// [p].. tyarthikatāyaṃ. apado cāyaṃ. bhagava + + [a]nabhinirvṛttatvā a[n]. + + /// + [pa]labdhīto ◊ apatho [bh]. ///<br />3 /// + + + rā rūpāvacarā ca devaputrā [bh]. + + + [e}tad avoca ◊ anujā[to] /// ry[o] subhūtis thero ◊ ta[t ki] ///<br />4 /// + + + v. nam indraṃ brāhmā ca sahaṃ. + + + + + .ā[vacar]āṃ [r]. [pā] .. + /// + [ya]ṃ devaputrā e[v].ṃ ///<br />5 /// + + + [a]nugato subhūti thero anujā + + + + + + + + + + + + + /// + + .i + + + + + ///&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972641";
+					filsti = "public/media/img_to_txt/1481282425.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481282425.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+										<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972641";
+					filsti = "public/media/img_to_txt/1481283520.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481283520.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972642bi' class='paragraph'>
+								2378/93b<br />recto<br />a /// + v. k. [bhū] .. + + ///<br />b /// etad avoca yathā [pi] ///<br />c /// ṇamitrehi .i .. + ///<br />d /// ..ṃ yogam ā + + ///<br /><br />verso<br />a /// + .. . y. r. + + ///<br />b /// [mi]tā durabhisaṃ + + ///<br />c /// devaputrā evam e[t]. ///<br />d /// + [du]ṣp[r]ajñ[e]hi .. +///&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972642";
+					filsti = "public/media/img_to_txt/1481283680.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481283680.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972643bi' class='paragraph'>
+								2374/1/1<br />recto<br />a ... + + + + + + + + + + + + + + + .v. + + + ...<br />b ... ddhasya dharmān deśa[y](aṃtas)[y](a na kāṅkṣa)[ti] na vicikitsat(i) e[va](ṃ)<br />c ... (ā)[h](a) ◊ [ś]rāvakasya pi dharmān deśayaṃtasya [na k](ā)ṅkṣati na vi[ci] ...<br />d ... + + + .. .. ..ṃ .. + .. .. + + + + + + ...<br /><br />verso<br />a ... + + + + + + .. .. + + + .. .. + + + + + + ...<br />b ... m[i]tāpratisaṃyuktāni sūcetavyāni ◊ evaṃ vutte bha[g]. ...<br />c ... mittasya apraṇihi(tasya ana)[bh](i)saṃskārasya an[u]t[p]ā[da](sya) ...<br />d ... + + + + + + + + + + + + ..ṃ + + .i + + + +&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972643";
+					filsti = "public/media/img_to_txt/1481282519.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481282519.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972644bi' class='paragraph'>
+								2374/1/24<br />recto<br />2 ktāyaṃ ◊ śikṣati carati yogam (ā)[p](ad)y(at). + + + + + + ...<br />3 paryaṃto yam idaṃ prajñāpāramitāpratisa[ṃyu](k)t. + + ...<br />4 tiṣṭaṃto dānaṃ dadyā ayam eva tena viśiṣyati ◊ yo .. ...<br />5 nadīvālikāsamāṃ kalpāṃ tiṣṭaṃto ◊ srotāpanneṣu [d]. ...<br /><br />verso<br />1 yath[o]pad(i)ṣṭ(ā)y(aṃ) prajñ[ā]p(ā)r(a)m(i)tā(yaṃ) ekad(i)v(a)s(ā)pi ...<br />2 ramit[ā]virahito gaṅganadīvalikāsamāṃ kalpāṃ [srotā] ...<br />3 yac [ca bodh]i ◯ satvo mahāsatvo prajñāpārami[t]ā .. ...<br />4 bodhisatvo mahāsatvo ◯ tena p.. .i + ... <br />5 [bh](av)i[ṣ](yat)i .. .. .. + + + + + + + + + + + ...&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972644";
+					filsti = "public/media/img_to_txt/1481282545.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481282545.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972645bi' class='paragraph'>
+								2374/3/20, 2374/1/46<br />recto<br />1 ... (p)[r](a)savati ya .. + + + + + ... [tā]ya(ṃ) par[i]gṛh[i]to ta [pra]<br />2 ... [ dhi]satvo mahāsatvo bahutaraṃ ... [a]bhisaṃskār[o] kalpitako<br />3 ... ◊ āha so pi subhū[ti p]. + + + ... vākhyāyati ri[k]tako ti<br />4 ... + + + [ti] y[a] + + + + + + ... + + h(ā)[satvo av](i)[ra]hi<br /><br />verso<br />2 ... + + + [pr](ame) + + + + + ... + + (j)ñ(ai)[v](a) sa(ā)[s]k[ār] ...<br />3 ... y[e]va subhūti ◊ apram[ e] + + + ... ... [ā]ha k[i]sya p[una ea] bhagava[ṃ]<br />4 ... .. canaṃ aprameyaṃ ti ◊ āni[mi] ... (ā)ha kiṃ puna bhagavaṃ śuṇya<br />5 ... vacanaṃ apra(meya)ṃ (t)i + + + ... ti na mayā sarv[v]adharmā&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972645";
+					filsti = "public/media/img_to_txt/1481282699.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481282699.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972646bi' class='paragraph'>
+								2374/33<br />recto<br />1 ... + + [r](āṃ) t(āṃ) c(i)ttutpādāṃ ◊ tāni kuśala[m]ū ...<br />2 ... + + [r](a)ṃtasya prajñāpāra[m]itāṃ [bh]ā[vay] ....<br />3 ... ś(ī)[la ]pāramitā ti sā śīla[ṃ sa] .. <br />4 ... .. ti ◊ puna-d-aparaṃ s[u]bhūti (bodh)i[s]. ...<br />5 + + + yati ti + + + + + + + ...<br /><br />verso<br />1 ... + + + + [p](ā)[r](a)[m](i) + + + + + + ...<br />2 ... v(a)ti ◊ ayaṃ vī(rya)[p](ā)[r](a)m(i) + + ...<br />3 ... tāṃ cittutpādaṃ ◊ tāni kuśalamūlā[ni] ...<br />4 ... [y](ā)ṃ caraṃtasya ◊ p[r]ajñāpāramitāṃ bhā ...<br />5 ... + .. yam idan dh[y]ānapāramitā ti [sa] ...&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972646";
+					filsti = "public/media/img_to_txt/1481282715.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481282715.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972647bi' class='paragraph'>
+								2375/49d<br />recto(?)<br />a /// + + + + + + .. + ///<br />b /// + + eva. vutte bha[g]. ///<br />c /// [ā]nimitte ca carati + ///<br />⟪pratyeka⟫<br />d /// + .. .. + .. +[t]e + ///<br /><br />verso(?)<br />a /// + + .v. + + .. p .. r. ///<br />b /// [m]. dhivimokṣamukhaṃ .. ///<br />c /// + ..ṃ tas[y]a sarvas. ///<br />d /// + + + + [l]. .. + + ///&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972647";
+					filsti = "public/media/img_to_txt/1481283700.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481283700.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'><div class='Sanskrit'><span id='5972648bi' class='paragraph'>
+								2374/1/19, 2374/1/20<br />recto<br />1 ... + + + + + + + d(aṃ) subhūti ◊ ā[h]a (k)i[ṃ] ...<br />2 ... + + (n)[n]o h(i)daṃ subhūti ◊ ā[ha] (k)iṃ + + ...<br />3 ... nno hidaṃ subhūti ◊ ā[ha] + + + + + ....<br />4 ... [t](i) prajñāpāramitāyaṃ + + + + + + ...<br /><br />verso<br />1 ... [ha] kiṃ puna bhagavān yā + + + + + ...<br />2 ... mitāyaṃ ◊ āha nno hidaṃ + + + ...<br />3 ... + .. [s]aṃskāra ◊ anyatra vijñ[ā] + + ...<br />4 ... + + + + + [t](e) bhagavaṃ āyu(ṣ)[m]. .. .&nbsp;</span></div>					<script language="javascript" type="text/javascript">
+
+						tekstid = "5972631";
+						kilderef = "BMSC  ";
+						$('#'+tekstid).text(kilderef);
+						</script>
+									<script language="javascript" type="text/javascript">
+
+					tekstid_bilder = "5972648";
+					filsti = "public/media/img_to_txt/1481282753.jpg";
+					thumbnail = "public/media/img_to_txt/th_1481282753.jpg";
+					$('#'+tekstid_bilder+'bi').append('<span class="bildediv" id=image><a href="' + filsti +'" TARGET="_blank"><img src="' + thumbnail +'" alt="Picture"></a></span>');
+
+					</script>
+					</div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:50%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=b189fd7f-7378-11e6-98cc-0050569f23b2</div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>

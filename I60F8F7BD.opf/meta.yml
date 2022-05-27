@@ -1,0 +1,239 @@
+id: I60F8F7BD
+source: https://www2.hf.uio.no/polyglotta/index.php?page=library&bid=2
+source_file: null
+initial_creation_type: input
+imported: '2022-05-27T20:44:21.912268'
+last_modified: '2022-05-27T20:44:21.912281'
+parser: null
+source_metadata:
+  title: 'Schøyen Collection: Brāhmī, published'
+  language: sa
+  base:
+    f7423:
+      title: CI_vol. 1
+      base_file: f7423.txt
+      order: 1
+    f5B88:
+      title: CI_vol. 2
+      base_file: f5B88.txt
+      order: 2
+    f33F1:
+      title: CI_vol. 3
+      base_file: f33F1.txt
+      order: 3
+    fEFCF:
+      title: CI_More fragments
+      base_file: fEFCF.txt
+      order: 4
+    f4D19:
+      title: CI_Vinayadhara
+      base_file: f4D19.txt
+      order: 5
+    f2439:
+      title: CII_*Andhasūtra and Kavikumārāvādana
+      base_file: f2439.txt
+      order: 6
+    fFCF0:
+      title: CIII_Uncertain fragments
+      base_file: fFCF0.txt
+      order: 7
+    f51B9:
+      title: CIII_Mahāparinirvāṇasūtra
+      base_file: f51B9.txt
+      order: 8
+    f0320:
+      title: CIII_Maitreyavyākaraṇa
+      base_file: f0320.txt
+      order: 9
+    fCAE7:
+      title: CIII_Śikhālakasūtra Siṅgālovādasutta
+      base_file: fCAE7.txt
+      order: 10
+    f1DD9:
+      title: CIV_a. Identified fragments
+      base_file: f1DD9.txt
+      order: 11
+    f221B:
+      title: CIV_b. Unidentified fragments
+      base_file: f221B.txt
+      order: 12
+    fA867:
+      title: CIV_c. Unplaced fragments
+      base_file: fA867.txt
+      order: 13
+    fBB4B:
+      title: 'CIV_Bspṭ: Bodhisatvapiṭakasūtra'
+      base_file: fBB4B.txt
+      order: 14
+    f5AD7:
+      title: 'CIV_Candr: Candrottarādārikāvyākaraṇa'
+      base_file: f5AD7.txt
+      order: 15
+    f754B:
+      title: 'CIV_Sddhmp: Saddharmapuṇḍarīkasūtra'
+      base_file: f754B.txt
+      order: 16
+    f7C5D:
+      title: CIV_Samādhirājasūtra
+      base_file: f7C5D.txt
+      order: 17
+    f74E9:
+      title: CIV_Larger Sukhāvatīvyūhasūtra
+      base_file: f74E9.txt
+      order: 18
+    fE16F:
+      title: CIV_Vajracchedikā Prajñāpāramitā
+      base_file: fE16F.txt
+      order: 19
+    f327D:
+      title: CV_Fragments
+      base_file: f327D.txt
+      order: 20
+    fE827:
+      title: CVI_Small fragments
+      base_file: fE827.txt
+      order: 21
+    f0AB0:
+      title: 'CVI_Sdhan: Sarvadharmāpravṛttinirdeśa'
+      base_file: f0AB0.txt
+      order: 22
+    fE3A3:
+      title: CVI_Ajātaśatru
+      base_file: fE3A3.txt
+      order: 23
+    f292B:
+      title: CVI_Unidentified
+      base_file: f292B.txt
+      order: 24
+    fF63D:
+      title: CVII_Śāriputra-Abhidharma
+      base_file: fF63D.txt
+      order: 25
+    f91D4:
+      title: CVIII_Pāṃśupradānāvadāna
+      base_file: f91D4.txt
+      order: 26
+    f4F6A:
+      title: CVIII_Vītaśokāvadāna
+      base_file: f4F6A.txt
+      order: 27
+    f65D5:
+      title: CVIII_Kūṇālāvadāna
+      base_file: f65D5.txt
+      order: 28
+    f9F9F:
+      title: CVIII_Aśokāvadāna
+      base_file: f9F9F.txt
+      order: 29
+    f6A01:
+      title: CVIII_"The Causes of a Northern Indian" and "The Causes of Devarakṣita"
+      base_file: f6A01.txt
+      order: 30
+    fED2D:
+      title: CVIII_"The Causes of the River"
+      base_file: fED2D.txt
+      order: 31
+    fC0B8:
+      title: CVIII_Aśokāvadāna, not yet identified
+      base_file: fC0B8.txt
+      order: 32
+    fC831:
+      title: CVIII_Aśokamukhanāgavinayapariccheda
+      base_file: fC831.txt
+      order: 33
+    f6787:
+      title: CVIII_Early commentary
+      base_file: f6787.txt
+      order: 34
+    f2ADD:
+      title: CVIII_Huviṣka
+      base_file: f2ADD.txt
+      order: 35
+    f88C9:
+      title: CVIII_Mīmāṃsaka
+      base_file: f88C9.txt
+      order: 36
+    f6C6C:
+      title: CVIII_Jyotiṣkāvadāna
+      base_file: f6C6C.txt
+      order: 37
+    f22DD:
+      title: CIX_Prasādapratibhodbhava
+      base_file: f22DD.txt
+      order: 38
+    f844F:
+      title: CIX_Varṇāhvarṇa
+      base_file: f844F.txt
+      order: 39
+    f5E2D:
+      title: CX_Śreṣṭhi- and Aviṣahyaśreṣṭhijātaka
+      base_file: f5E2D.txt
+      order: 40
+    fD99D:
+      title: CX_Maṅgala verses and Vyāghrījātaka
+      base_file: fD99D.txt
+      order: 41
+    fFE4E:
+      title: CX_Maitrībalajātaka
+      base_file: fFE4E.txt
+      order: 42
+    fA53D:
+      title: CX_Śarabhajātaka
+      base_file: fA53D.txt
+      order: 43
+    fAAA4:
+      title: CX_Aviṣahyaśreṣṭhijātaka
+      base_file: fAAA4.txt
+      order: 44
+    f4DB8:
+      title: CX_Śibijātaka
+      base_file: f4DB8.txt
+      order: 45
+    f00EC:
+      title: CX_Viśvaṃtarāvadāna
+      base_file: f00EC.txt
+      order: 46
+    fB26D:
+      title: CX_Haribhaṭṭa’s Jātakamālā
+      base_file: fB26D.txt
+      order: 47
+    f9BBB:
+      title: CX_ye dharmā
+      base_file: f9BBB.txt
+      order: 48
+    f3652:
+      title: CX_Mahāsamājasūtra commentary ?
+      base_file: f3652.txt
+      order: 49
+    fD6D6:
+      title: CX_Avadānaśataka
+      base_file: fD6D6.txt
+      order: 50
+    f313A:
+      title: CX_Fragment of a play
+      base_file: f313A.txt
+      order: 51
+    fD428:
+      title: CX_Copper Scroll
+      base_file: fD428.txt
+      order: 52
+  chapter_to_tile:
+    CI: Vinaya, alphabetically
+    CII: Sūtra, alphabetically
+    CIII: Sūtra, alphabetically Caṅgīsūtra
+    CIV: Sūtra, alphabetically Aṣṭasāhasrikā Prajñāpāramitā Appendix
+    CV: Sūtra, alphabetically Aṣṭasāhasrikā Prajñāpāramitā Appendix Mahāyāna sūtra
+      manuscript Śrīmālā
+    CVI: Sūtra, alphabetically Aṣṭasāhasrikā Prajñāpāramitā Appendix Mahāyāna sūtra
+      manuscript Śrīmālā Pravāraṇāsūtra
+    CVII: Abhidharma, alphabetically
+    CVIII: Miscellaneous, in order of publication
+    CIX: Miscellaneous, in order of publication Mātṛceṭa
+    CX: Miscellaneous, in order of publication Mātṛceṭa Āryasūra’s Jātakamālā
+statistics: {}
+quality: {}
+copyright:
+  status: Unknown
+  notice: ''
+  info_url: null
+license: null
